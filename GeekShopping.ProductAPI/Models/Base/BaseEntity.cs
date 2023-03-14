@@ -7,6 +7,6 @@ namespace GeekShopping.ProductAPI.Models.Base
     {
         [Key]
         [Column("id")]
-        public long Id { get; set; }
+        public long? Id { get; set; }
     }
 }

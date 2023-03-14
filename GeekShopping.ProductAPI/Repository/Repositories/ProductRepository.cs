@@ -48,13 +48,13 @@ namespace GeekShopping.ProductAPI.Repository.Repositories
 
         public async Task<IEnumerable<ProductVO>> FindAll()
         {
-            List<Product> products = await _context.Products.ToListAsync();
+            List<Product> products = await _context.Products.AsNoTracking().ToListAsync();
             return _mapper.Map<List<ProductVO>>(products);
         }
 
         public async Task<ProductVO> FindById(long id)
         {
-            Product product = await _context.Products.Where(c => c.Id == id).FirstOrDefaultAsync();
+            Product product = await _context.Products.AsNoTracking().Where(c => c.Id == id).FirstOrDefaultAsync();
             return _mapper.Map<ProductVO>(product);
         }
 
