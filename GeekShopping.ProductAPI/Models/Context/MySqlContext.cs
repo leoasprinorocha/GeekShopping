@@ -20,7 +20,7 @@ namespace GeekShopping.ProductAPI.Models.Context
         {
             modelBuilder.Entity<Product>().HasData(new Product
             {
-                Id = 0,
+                Id = 2,
                 Name = "Boneco Pantera Negra",
                 Description = "Description",
                 Price = new decimal(500.90),
@@ -29,7 +29,7 @@ namespace GeekShopping.ProductAPI.Models.Context
             },
             new Product
             {
-                Id = 0,
+                Id = 3,
                 Name = "Boneco Capitão América",
                 Description = "Description",
                 Price = 500,

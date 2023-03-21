@@ -23,6 +23,7 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 #endregion
 
 
+
 var connection = builder.Configuration["MySQlConnection:MySQlConnectionString"];
 
 builder.Services.AddDbContext<MySqlContext>(options =>

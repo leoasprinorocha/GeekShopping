@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/GeekShopping.ProductAPI/Migrations/20230321011436_SeedProductDatatable.cs
+/GeekShopping.ProductAPI/Migrations/20230321011436_SeedProductDatatable.Designer.cs
